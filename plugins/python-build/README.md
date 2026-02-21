@@ -1,13 +1,13 @@
 # python-build
 
-python-build is a [pyenv](https://github.com/pyenv/pyenv) plugin that
+python-build is a [pyenv](https://github.com/Unity-Billal-mesloub/pyenv) plugin that
 provides a `pyenv install` command to compile and install different versions
 of Python on UNIX-like systems.
 
 You can also use python-build without pyenv in environments where you need
 precise control over Python version installation.
 
-See the [list of releases](https://github.com/pyenv/pyenv/releases)
+See the [list of releases](https://github.com/Unity-Billal-mesloub/pyenv/releases)
 for changes in each version.
 
 
@@ -24,7 +24,7 @@ Installing python-build as a standalone program will give you access to the
 `python-build` command for precise control over Python version installation. If you
 have pyenv installed, you will also be able to use the `pyenv install` command.
 
-    git clone https://github.com/pyenv/pyenv.git
+    git clone https://github.com/Unity-Billal-mesloub/pyenv.git
     cd pyenv/plugins/python-build
     ./install.sh
 
@@ -55,7 +55,7 @@ Or, if you would like to install the latest development release:
 ## Usage
 
 Before you begin, you should ensure that your build environment has the proper
-system dependencies for compiling the wanted Python Version (see our [recommendations](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)).
+system dependencies for compiling the wanted Python Version (see our [recommendations](https://github.com/Unity-Billal-mesloub/pyenv/wiki#suggested-build-environment)).
 
 ### Using `pyenv install` with pyenv
 
@@ -93,12 +93,12 @@ Both `pyenv install` and `python-build` accept a path to a custom definition fil
 in place of a version name. Custom definitions let you develop and install
 versions of Python that are not yet supported by python-build.
 
-See the [python-build built-in definitions](https://github.com/pyenv/pyenv/tree/master/plugins/python-build/share/python-build) as a starting point for
+See the [python-build built-in definitions](https://github.com/Unity-Billal-mesloub/pyenv/tree/master/plugins/python-build/share/python-build) as a starting point for
 custom definition files.
 
 #### Adding definitions with a Pyenv plugin
 
-You can add your own definitions with a [Pyenv plugin](https://github.com/pyenv/pyenv?tab=readme-ov-file#pyenv-plugins) by placing them under
+You can add your own definitions with a [Pyenv plugin](https://github.com/Unity-Billal-mesloub/pyenv?tab=readme-ov-file#pyenv-plugins) by placing them under
 `$PYENV_ROOT/plugins/your_plugin_name/share/python-build`.
 
 ### Default build configuration
@@ -135,7 +135,7 @@ and also Python dependencies that are typically keg-only are searched for in the
 **NOTE:** Homebrew is not used in Linux by default because it's rolling-release which causes a problem.
 Upgrading a Python dependency in Homebrew to a new major version (that `brew` does without warning)
 would break all Pyenv-managed installations that depend on it.
-You can use a [community plugin `fix-version`](https://github.com/pyenv/pyenv/wiki/Plugins#community-plugins)
+You can use a [community plugin `fix-version`](https://github.com/Unity-Billal-mesloub/pyenv/wiki/Plugins#community-plugins)
 to fix installations in such a case.
 
 ##### MacPorts
@@ -299,12 +299,12 @@ variable when using `--keep` with `python-build`.
 
 ## Getting Help
 
-Please see the [pyenv wiki](https://github.com/pyenv/pyenv/wiki) for solutions to common problems.
+Please see the [pyenv wiki](https://github.com/Unity-Billal-mesloub/pyenv/wiki) for solutions to common problems.
 
-[wiki]: https://github.com/pyenv/pyenv/wiki
+[wiki]: https://github.com/Unity-Billal-mesloub/pyenv/wiki
 
 If you can't find an answer on the wiki, open an issue on the [issue
-tracker](https://github.com/pyenv/pyenv/issues). Be sure to include
+tracker](https://github.com/Unity-Billal-mesloub/pyenv/issues). Be sure to include
 the full build log for build failures.
 
 ## Contributing
