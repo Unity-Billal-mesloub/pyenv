@@ -6,8 +6,8 @@ pyenv lets you easily switch between multiple versions of Python. It's
 simple, unobtrusive, and follows the UNIX tradition of single-purpose
 tools that do one thing well.
 
-This project was forked from [rbenv](https://github.com/rbenv/rbenv) and
-[ruby-build](https://github.com/rbenv/ruby-build), and modified for Python.
+This project was forked from [rbenv](https://github.com/Unity-Billal-mesloub/rbenv) and
+[ruby-build](https://github.com/Unity-Billal-mesloub/ruby-build), and modified for Python.
 
 ### What pyenv _does..._
 
@@ -26,7 +26,7 @@ This project was forked from [rbenv](https://github.com/rbenv/rbenv) and
 * **Need to be loaded into your shell.** Instead, pyenv's shim
     approach works by adding a directory to your `PATH`.
 * **Manage virtualenv.** Of course, you can create [virtualenv](https://pypi.python.org/pypi/virtualenv)
-    yourself, or [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)
+    yourself, or [pyenv-virtualenv](https://github.com/Unity-Billal-mesloub/pyenv-virtualenv)
     to automate the process.
 
 
@@ -93,7 +93,7 @@ curl -fsSL https://pyenv.run | bash
 ```
 
 For more details visit our other project:
-https://github.com/pyenv/pyenv-installer
+https://github.com/Unity-Billal-mesloub/pyenv-installer
 
 
 ##### 2. Basic GitHub Checkout
@@ -104,7 +104,7 @@ easy to fork and contribute any changes back upstream.
 * **Check out Pyenv where you want it installed.**
    A good place to choose is `$HOME/.pyenv` (but you can install it somewhere else):
     ```
-    git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+    git clone https://github.com/Unity-Billal-mesloub/pyenv.git ~/.pyenv
     ```
 *  Optionally, try to compile a dynamic Bash extension to speed up Pyenv. Don't
    worry if it fails; Pyenv will still work normally:
@@ -168,7 +168,7 @@ Moreover, even there, the Pythons it installs are not native Windows versions
 but rather Linux versions running in a virtual machine --
 so you won't get Windows-specific functionality.
 
-If you're in Windows, we recommend using @kirankotari's [`pyenv-win`](https://github.com/pyenv-win/pyenv-win) fork --
+If you're in Windows, we recommend using @kirankotari's [`pyenv-win`](https://github.com/Unity-Billal-mesloub/pyenv-win) fork --
 which does install native Windows Python versions.
 
 </details>
@@ -215,7 +215,7 @@ See [Advanced configuration](#advanced-configuration) for details and more confi
    to point to `.bashrc`. On such systems, you should almost certainly put the
    `eval "$(pyenv init - bash)"` line into `.bash_profile`, and **not** into `.bashrc`. Otherwise, you
    may observe strange behaviour, such as `pyenv` getting into an infinite loop.
-   See [#264](https://github.com/pyenv/pyenv/issues/264) for details.
+   See [#264](https://github.com/Unity-Billal-mesloub/pyenv/issues/264) for details.
    
    </details>
    
@@ -299,7 +299,7 @@ See [Advanced configuration](#advanced-configuration) for details and more confi
 ### D. Install Python build dependencies
 ----
 
-  [**Install Python build dependencies**](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)
+  [**Install Python build dependencies**](https://github.com/Unity-Billal-mesloub/pyenv/wiki#suggested-build-environment)
   before attempting to install a new Python version.
 
   You can now begin using Pyenv.
@@ -355,7 +355,7 @@ for details.
 
 **NOTE:** If you are having trouble installing a Python version,
 please visit the wiki page about
-[Common Build Problems](https://github.com/pyenv/pyenv/wiki/Common-build-problems).
+[Common Build Problems](https://github.com/Unity-Billal-mesloub/pyenv/wiki/Common-build-problems).
 
 **NOTE:** If you want to use proxy for download, please set the `http_proxy` and `https_proxy`
 environment variables.
@@ -486,7 +486,7 @@ then you can upgrade it with `brew upgrade pyenv` as usual.
 ### Upgrading with Installer or Git checkout
 
 If you've installed Pyenv with Pyenv-installer, you likely have the
-[Pyenv-Update](https://github.com/pyenv/pyenv-update) plugin that would
+[Pyenv-Update](https://github.com/Unity-Billal-mesloub/pyenv-update) plugin that would
 upgrade Pyenv and all installed plugins:
 
 ```sh
@@ -551,10 +551,10 @@ with whatever extra logic you need to be run at certain moments.
 The main idea is that most things that you can put under `$PYENV_ROOT/<whatever>` you can also put
 under `$PYENV_ROOT/plugins/your_plugin_name/<whatever>`.
 
-See [_Plugins_ on the wiki](https://github.com/pyenv/pyenv/wiki/Plugins) on how to install and use plugins
+See [_Plugins_ on the wiki](https://github.com/Unity-Billal-mesloub/pyenv/wiki/Plugins) on how to install and use plugins
 as well as a catalog of some useful existing plugins for common needs.
 
-See [_Authoring plugins_ on the wiki](https://github.com/pyenv/pyenv/wiki/Authoring-plugins) on writing your own plugins.
+See [_Authoring plugins_ on the wiki](https://github.com/Unity-Billal-mesloub/pyenv/wiki/Authoring-plugins) on writing your own plugins.
 
 ----
 
@@ -609,19 +609,19 @@ When you execute a shim, pyenv determines which Python version to use by
 reading it from the following sources, in this order:
 
 1. The `PYENV_VERSION` environment variable (if specified). You can use
-   the [`pyenv shell`](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md#pyenv-shell) command to set this environment
+   the [`pyenv shell`](https://github.com/Unity-Billal-mesloub/pyenv/blob/main/COMMANDS.md#pyenv-shell) command to set this environment
    variable in your current shell session.
 
 2. The application-specific `.python-version` file in the current
    directory (if present). You can modify the current directory's
-   `.python-version` file with the [`pyenv local`](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md#pyenv-local)
+   `.python-version` file with the [`pyenv local`](https://github.com/Unity-Billal-mesloub/pyenv/blob/main/COMMANDS.md#pyenv-local)
    command.
 
 3. The first `.python-version` file found (if any) by searching each parent
    directory, until reaching the root of your filesystem.
 
 4. The global `$(pyenv root)/version` file. You can modify this file using
-   the [`pyenv global`](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md#pyenv-global) command.
+   the [`pyenv global`](https://github.com/Unity-Billal-mesloub/pyenv/blob/main/COMMANDS.md#pyenv-global) command.
    If the global version file is not present, pyenv assumes you want to use the "system"
    Python (see below).
 
@@ -802,10 +802,10 @@ for environment variables that can be used to customize the build.
 ## Development
 
 The pyenv source code is [hosted on
-GitHub](https://github.com/pyenv/pyenv).  It's clean, modular,
+GitHub](https://github.com/[pyenv](https://github.com/Unity-Billal-mesloub/pyenv).  It's clean, modular,
 and easy to understand, even if you're not a shell hacker.
 
-Tests are executed using [Bats](https://github.com/bats-core/bats-core):
+Tests are executed using [Bats](https://github.com/Unity-Billal-mesloub/bats-core):
 
     bats test
     bats/test/<file>.bats
@@ -814,7 +814,7 @@ Tests are executed using [Bats](https://github.com/bats-core/bats-core):
 ### Contributing
 
 Feel free to submit pull requests and file bugs on the [issue
-tracker](https://github.com/pyenv/pyenv/issues).
+tracker](https://github.com/Unity-Billal-mesloub/pyenv/issues).
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for more details on submitting changes.
 
@@ -829,5 +829,5 @@ See [CHANGELOG.md](CHANGELOG.md).
 [The MIT License](LICENSE)
 
 
-[pyenv-virtualenv]: https://github.com/pyenv/pyenv-virtualenv#readme
-[hooks]: https://github.com/pyenv/pyenv/wiki/Authoring-plugins#pyenv-hooks
+[pyenv-virtualenv]: https://github.com/Unity-Billal-mesloub/pyenv-virtualenv#readme
+[hooks]: https://github.com/Unity-Billal-mesloub/pyenv/wiki/Authoring-plugins#pyenv-hooks
