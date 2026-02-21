@@ -28,7 +28,7 @@ The most common subcommands are:
 
 ## `pyenv help`
 
-List all available pyenv commands along with a brief description of what they do. Run `pyenv help <command>` for information on a specific command. For full documentation, see: https://github.com/pyenv/pyenv#readme
+List all available pyenv commands along with a brief description of what they do. Run `pyenv help <command>` for information on a specific command. For full documentation, see: https://github.com/Unity-Billal-mesloub/pyenv#readme
 
 
 ## `pyenv commands`
